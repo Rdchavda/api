@@ -5,6 +5,8 @@ from io import BytesIO
 from PIL import Image
 import tensorflow as tf
 
+tf.config.set_visible_devices([], 'GPU')
+
 app = FastAPI()
 
 MODEL = tf.keras.models.load_model("model1.keras")
