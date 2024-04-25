@@ -9,7 +9,7 @@ tf.config.set_visible_devices([], 'GPU')
 
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model("model1.keras")
+MODEL = tf.keras.models.load_model("model3.keras")
 CLASS_NAMES = ["Apple", "Blueberry", "Cherry", "Corn", "Grape", "Orange", "Peach", "Pepper", "Potato", "Raspberry", "Soybean", "Squash", "Strawberry", "Tomato"]
 
 @app.get("/")
